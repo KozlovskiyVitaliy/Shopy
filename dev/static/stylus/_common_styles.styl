@@ -1,0 +1,162 @@
+.section-title
+  text-align center
+  margin-bottom 70px
+
+.section-title__big
+  margin-bottom 30px
+  span
+    text-transform uppercase
+    font-size 2.571rem
+    font-family extraBoldFont
+
+.section-title__decr
+  display block    
+  color lightBlueColor
+
+      
+.product-item__pic
+  display block
+  margin 0 auto 25px
+  height 205px
+
+.product-item__title
+  font-weight bold
+  font-size 1.143rem
+  text-align center
+  margin-bottom 25px
+  display block
+
+.product-item__price
+  display block
+  text-align center
+  font-weight bold
+  font-size 1.143rem
+  color orangeColor
+
+.product-item
+  position relative
+  background-color white
+  width 100%
+  width 270px
+  height 355px
+  padding 30px 20px
+  float left
+  margin-bottom 50px
+  transition 1s
+  &:hover
+    box-shadow 0 5px 15px rgba(0, 0, 0, 0.1)
+    transition 1s
+    .product-item__first
+      display none
+    .product-item__second
+      opacity 1
+      transition 1.5s
+
+.section-title__orange
+  color orangeColor
+
+.product-item__second
+  position absolute
+  top 0
+  left 0
+  opacity 0
+  padding 30px 20px
+  .product-item__title
+    color orangeColor    
+
+.product-item__slider 
+  img
+    margin 0 auto
+    display block
+    height 90px   
+
+.product-item__sizes
+  text-align center
+  font-family boldFont
+  margin-bottom 20px
+  &>span
+    margin-right 10px
+
+.sizes-list
+  display inline-block
+  li
+    display inline-block
+    &:after
+      content '-'
+      margin-left 5px
+    &:last-child
+      &:after
+        display none
+    &.active
+      span
+        color orangeColor
+        font-size 1.4rem
+  span
+    cursor pointer
+    &:hover   
+      color orangeColor
+   
+.product-item__colors
+  text-align center
+  margin-bottom 30px
+  a
+    display inline-block
+    vertical-align top
+    width 12px
+    height 12px
+    border-radius 50%
+    margin 0 2px
+
+.product-color__pink
+  background-color #e12e3f 
+
+.product-color__blue
+  background-color #34404b    
+
+.product-color__indigo
+  background-color #3ab3ff    
+
+.product-color__green 
+  background-color #2fd967
+
+.product-item__buttons
+  text-align center  
+  &:before
+    content ''
+    display block
+    width 70%
+    margin 0 auto 30px
+    height 1px
+    background-color lightGrayColor
+  a
+    display inline-block
+    vertical-align bottom
+    margin 0 10px
+    
+.product-item__web
+  sprite($s-share)
+
+.product-item__buy
+  sprite($s-cart)
+
+.product-item__favorite
+  sprite($s-like)
+
+.product-item__more-load
+  display block
+  width 100%  
+  text-align center
+  color orangeColor
+  height 60px
+  line-height .3
+  font-size 5rem
+  background-color white
+
+.g-btn
+  border none
+  background-color orangeColor
+  color white
+  font-size 1.143rem
+  line-height 50px
+  padding 0 34px
+  cursor pointer

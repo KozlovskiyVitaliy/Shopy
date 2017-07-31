@@ -1,0 +1,116 @@
+extends ../layout/main
+
+block title
+	| Shopy
+
+block content
+
+	section.index-slider
+		.container
+			.js-index-slider__pager
+				a(href="#", data-slide-index="0") 
+				a(href="#", data-slide-index="1") 
+				a(href="#", data-slide-index="2") 
+		ul.js-index-slider
+			li
+				img(src="static/img/content/main-slider/slide1.jpg", alt="")
+				.index-slider__info
+					span.index-slider__title FULL WINTER KIT
+					span.index-slider__goods Half Jacket + Skiny Trousers + Boot leather
+					span.index-slider__descr Lorem Ipsum is simply dummy text of the printing and typesetting industry
+					.index-slider__action
+						span.index-slider__price $120 : Price
+						span.index-slider__buy Order Now
+			li
+				img(src="static/img/content/main-slider/slide1.jpg", alt="")
+			li
+				img(src="static/img/content/main-slider/slide1.jpg", alt="")
+		
+	section.new-arrivals
+		.container.clearfix
+			.section-title
+				.section-title__big
+					span.section-title__orange new 
+					span Arrivals
+				span.section-title-decr Lorem Ipsum is simply dummy text of the printing and typesetting industry
+			.product-item__wrap.clearfix
+				include ../products/product1
+				include ../products/product2
+				include ../products/product3
+				include ../products/product1
+			a(href="javascript:void(0);").product-item__more-load ...
+
+	section.banners
+			.container
+				.banner-big
+					img(src="static/img/content/banners/discount.png").banner-big__img
+					.banner-big__text
+						span.banner-big__title Full winter KIT
+						span.banner-big__descr Half Jacket + Skiny Trousers + Boot leather
+					a(href="javascript:void(0);").banner-big__price 120$ 
+
+				.banner-small
+					.banner-empty__wrap
+						span.banner-empty__text adv
+						span.banner-empty__text.banner-empty__text--orange  area
+						span.banner-size 470 x 100
+
+
+	section.best-sales
+		.container.clearfix
+			.section-title
+				.section-title__big
+					span.section-title__orange Best 
+					span Sales
+				span.section-title-decr Lorem Ipsum is simply dummy text of the printing and typesetting industry
+
+			.best-sales__item-wrap
+				.best-sales__item
+					img(src="static/img/content/products/product4.png").best-sales__img
+					.best-sales__info
+						span.best-sales__title Reebok Track Jacket
+						.best-sales__rating
+							img(src="static/img/general/stars.jpg")
+							span.best-sales__price 100$
+						a(href="javascript:void(0);").best-sales__buy add to cart
+
+				.best-sales__item
+					img(src="static/img/content/products/product4.png").best-sales__img
+					.best-sales__info
+						span.best-sales__title Reebok Track Jacket
+						.best-sales__rating
+							img(src="static/img/general/stars.jpg")
+							span.best-sales__price 100$
+						a(href="javascript:void(0);").best-sales__buy add to cart
+
+				.best-sales__item
+					img(src="static/img/content/products/product4.png").best-sales__img
+					.best-sales__info
+						span.best-sales__title Reebok Track Jacket
+						.best-sales__rating
+							img(src="static/img/general/stars.jpg")
+							span.best-sales__price 100$
+						a(href="javascript:void(0);").best-sales__buy add to cart
+
+	section.subscribe
+		.container
+			.subcribe__content
+				span.subscribe__title News Letter
+				span.subscribe__descr join us now to get all news and special offers
+				form.subscribe-form
+					.input-field__wrap
+						input(type="text" name="mail" placeholder="type your email here").input-field
+					input(type="submit" value="join us").g-btn
+
+
+
+
+
+
+
+
+
+
+
+
+

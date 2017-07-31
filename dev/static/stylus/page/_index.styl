@@ -1,0 +1,236 @@
+.js-index-slider
+  img
+    max-height 650px
+    width 100%
+
+.js-index-slider__pager
+  position absolute
+  z-index 10
+  top 50%
+  transform translateY(-50%)
+  a
+    display block
+    width 10px
+    height 17px
+    background-color white
+    margin-bottom 10px
+    &:last-child
+      margin-bottom 0
+    &.active
+      height 36px
+      background-color orangeColor
+
+.index-slider__info
+  position absolute
+  z-index 10
+  top 35%
+  left 22%  
+
+.index-slider__title
+  display block
+  margin-bottom 20px
+  font-family extraBoldFont
+  font-size 3.714rem
+  color orangeColor
+
+.index-slider__goods
+  display block
+  margin-bottom 10px
+  font-size 1.286rem
+  font-family boldFont
+
+.index-slider__descr
+  display block
+  font-size 1.143rem
+  color lightBlueColor
+  margin-bottom 50px
+
+.index-slider__price
+  margin-right 30px
+  font-family boldFont
+
+.index-slider__buy
+  color orangeColor
+  font-family boldFont
+  cursor pointer
+  &:before
+    content ''
+    display inline-block
+    sprite($s-header_busket)
+    margin-right 10px
+    margin-bottom -2px
+
+.new-arrivals
+  .product-item
+    margin-right 30px
+    &:nth-of-type(4n+4)
+      margin-right 0
+
+.banners
+  .container
+    overflow hidden
+
+.banner-big
+  float left
+  width 100%
+  max-width 670px
+  border 1px solid lightBorderColor
+  background-color #fff
+  height 100px
+  padding 10px 0 0 60px
+
+.banner-big__img
+  margin-right 60px
+
+.banner-big__text
+  display inline-block
+  vertical-align middle
+  margin-right 60px
+
+.banner-big__title
+  font-family extraBoldFont
+  font-size 1.571rem
+  text-transform uppercase
+  display block
+  margin-bottom 15px  
+
+.banner-big__descr
+  font-size .8571rem
+  color lightBlueColor
+
+.banner-big__price
+  display inline-block
+  vertical-align middle
+  color orangeColor
+  font-size 2.286rem
+  font-family extraBoldFont
+  &:before
+    content ''
+    display inline-block
+    sprite($s-cart)
+    margin-right 20px
+
+.banner-small
+  float right
+  width 100%
+  max-width 470px
+  border 1px solid lightBorderColor
+  background-color #fff
+  height 100px
+  padding-top 30px
+
+.banner-empty__wrap
+  text-align center
+
+.banner-empty__text
+  font-size 1.143rem
+  color lightBlueColor
+  &.banner-empty__text--orange
+    color orangeColor
+
+.banner-size
+  font-size .857rem
+  display block
+  margin-top 15px
+  opacity 0.4
+  color mainFontColor
+  letter-spacing 4px
+
+.best-sales__item
+  background-color #fff
+  padding 50px 30px 50px 150px
+  position relative
+  max-width 370px
+  min-height 171px
+  width 100%
+  float left
+  margin-right 30px
+  cursor pointer
+  transition 1s
+  &:nth-of-type(3n)
+    margin-right 0
+  &:hover
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+    .best-sales__rating
+      display none
+    .best-sales__buy
+      display block
+
+.best-sales__img 
+  position absolute
+  top 40px
+  left 30px
+
+.best-sales__title
+  font-family boldFont
+  font-size 1.286rem
+  display block
+  margin-bottom 30px
+
+.best-sales__info
+  text-align center
+  
+.best-sales__rating
+ overflow hidden
+ text-align left
+
+.best-sales__price
+  float right
+  font-family boldFont
+  font-size 1.143rem
+  color orangeColor
+
+.best-sales__buy
+  display none
+  font-size 1.143rem
+  color orangeColor
+  &:before
+    content ''
+    display inline-block
+    sprite($s-cart)
+    margin-right 10px
+
+.subcribe__content
+  background-color white
+  padding 35px 40px
+  overflow hidden
+
+.subscribe__title
+  font-size 1.286rem
+  color orangeColor
+  font-family extraBoldFont
+  margin-right 30px
+  text-transform uppercase
+  display inline-block
+  padding-top 15px  
+
+.subscribe__descr
+  font-family italicFont
+
+.subscribe-form
+  float right
+  width 100%
+  max-width 400px
+
+.input-field__wrap
+  position relative
+  padding-left 35px
+  display inline-block
+  width 100%
+  max-width 200px
+
+  &:before
+    content ''    
+    position absolute
+    left 0
+    top 4px
+    sprite($s-mail) 
+
+.input-field
+  background none
+  border none
+  font-family italicFont
+
+
+
+
